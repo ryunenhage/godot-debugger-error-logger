@@ -4,6 +4,7 @@ Automatically logs errors and warnings from the Godot Editor's **Debugger > Erro
 
 ## Why?
 
+The reason is to smoothly convey the contents of the debugger tab to LLM.
 By default, Godot's file logging feature (`file_logging/enable_file_logging=true`) only captures console output (stdout/stderr), but **does not log the errors shown in the Debugger's Errors tab**. This plugin solves that problem by directly accessing the Debugger's error tree and saving all errors to a log file.
 
 No more copy-pasting errors manually!
@@ -88,3 +89,4 @@ Issues and pull requests are welcome!
 ## Credits
 
 Developed by [@toryufuco](https://github.com/toryufuco)
+
