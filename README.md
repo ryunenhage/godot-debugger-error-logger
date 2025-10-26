@@ -28,18 +28,6 @@ No more copy-pasting errors manually!
 4. Go to `Project` → `Project Settings` → `Plugins`
 5. Enable the **Error Logger** plugin
 
-### Method 2: Global Installation (Recommended for personal use)
-
-Install once and use across **all your projects**:
-
-1. Download or clone this repository
-2. Copy the `error_logger` folder to your Godot editor plugins directory:
-   - **Windows**: `%APPDATA%\Godot\editor_plugins\error_logger\`
-   - **Linux**: `~/.local/share/godot/editor_plugins/error_logger/`
-   - **macOS**: `~/Library/Application Support/Godot/editor_plugins/error_logger/`
-3. Restart Godot Editor
-4. The plugin will be automatically enabled for all projects
-
 ## Usage
 
 Once enabled, the plugin automatically monitors the Debugger's Errors tab and logs all errors to:
@@ -101,4 +89,5 @@ Issues and pull requests are welcome!
 ## Credits
 
 Developed by [@toryufuco](https://github.com/toryufuco)
+
 
