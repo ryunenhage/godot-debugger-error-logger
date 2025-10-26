@@ -7,7 +7,7 @@ extends EditorPlugin
 # License: MIT
 
 # Configuration
-var log_file_path = "user://debugger_errors.log"  # Path to the log file
+var log_file_path = "res://debugger_logs/debugger_errors.log"  # Path to the log file
 var check_interval = 1.0  # How often to check for new errors (in seconds)
 
 # Internal variables
@@ -20,6 +20,12 @@ func _enter_tree():
 	print("ERROR LOGGER PLUGIN ACTIVATED")
 	print("Log file: ", log_file_path)
 	print("==================================================")
+
+	# Create debugger_logs directory if it doesn't exist
+	var dir = DirAccess.open("res://")
+	if dir and not dir.dir_exists("debugger_logs"):
+		dir.make_dir("debugger_logs")
+		print("[ErrorLogger] Created debugger_logs directory")
 
 	await get_tree().create_timer(2.0).timeout
 
